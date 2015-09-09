@@ -1,0 +1,141 @@
+Ejercicios.1.Elaborar un script que convierta un x número de galones en litros, tener en cuenta que hay 3.7854 litros en un galón
+
+var galon= prompt("ingrese la cantidad de galones");
+
+var litros=(galon/3.7854); 
+
+alert(litros);
+
+
+2.Realizar un script que dada una unidad realice la conversión de: Grados centígrados a Grados Fahrenheit, de Grados centígrados a Grados Kelvin y viceversa
+
+de grados centigrados a  farenheit
+
+var cel= prompt("ingrese la cantidad de grados celsius");
+
+
+var faren=((9/5)*cel + 32);
+
+alert("de gradoscentigrados a  farenheit es:"+" " + faren);
+
+
+de farenheit a centigrados
+
+var faren= prompt("ingrese la cantidad de grados farenheit");
+
+
+var cel=(faren - 32)/1.8 ;
+
+alert("de grados farenheit a  grados centigrados  es:"+" " + cel);
+
+
+de grados centigrados a kelvin
+
+var n1 = prompt("ingrese la cantidad de grados celsius");
+  
+ 
+ var n2 = 273;
+
+ alert (' los grados  centigrados a kelvin es ' + n1 +' '+ 'es' +' ' +res);
+
+ res  =  parseInt(n1)+parseInt(n2);
+
+
+de grados kelvin a centigrados
+
+var n1 = prompt("ingrese la cantidad de grados kelvin");
+  
+ 
+ var n2 = 273;
+
+ alert (' los grados   kelvin a centigrados es ' + n1 +' '+ 'es' +' ' +res);
+
+ res  =  parseInt(n1)-parseInt(n2);
+
+
+
+
+Ejercicios 3.
+ La gravedad de la Luna es de alrededor del 17% de la Tierra. escribir un script  que calcule su peso efectivo en la Luna
+
+var peso= prompt("ingrese su peso");
+
+var pesoluna= peso *17/100;
+
+alert("su peso en la luna es de :"+pesoluna);
+
+
+Ejercicios 4.
+Escribir scripts para calcular:a.El área de un circulo.b.El área de un triángulo.c.El área de un cuadrado.
+
+area del circulo 
+
+var circulo = prompt("ingrese el radio");
+
+var radio=(3.1416*(circulo*circulo));
+
+alert("El area del circulo es:" radio);
+
+
+area del triangulo
+
+var base = prompt("ingrese la base");
+var altura = prompt("ingrese la altura");
+var area = (base*altura)/2;
+alert("el area del triangulo es:"+area);
+
+
+
+area del cuadrado:
+
+var lado = prompt("ingrese lado");
+var area = (lado*lado);
+alert("el area del cuadrado es:"+area);
+
+Ejercicio 5. Dado un string contar el número de vocales (sin acento) que contiene
+
+function Vocales(vocal)
+  {
+    var f;
+    var cantidad=0;
+    for(f=0;f<vocal.length;f++)
+    {
+      if (vocal.charAt(f)=='a' ||
+          vocal.charAt(f)=='e' ||
+          vocal.charAt(f)=='i' ||
+          vocal.charAt(f)=='o' ||
+          vocal.charAt(f)=='u' || 
+          vocal.charAt(f)=='A' ||
+          vocal.charAt(f)=='E' ||
+          vocal.charAt(f)=='I' ||
+          vocal.charAt(f)=='O' ||
+          vocal.charAt(f)=='U')
+      {
+        cantidad++;
+      }
+    }
+    alert (' El total de vocales de ' + vocal +' '+ 'es' +' ' +cantidad);
+  }
+  
+
+  var vocal;
+  vocal=prompt('Ingrese la palabra:','');
+  Vocales(vocal);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
